@@ -24,8 +24,19 @@ button:hover {
 .arrows {
     color: black;
     background-color: none;
+	text-align: center;
 }
 
 #bw {
 	transform: scaleX(-1);
+}
+
+.playback {
+	text-align: center;
+}
+
+#youtube-video {
+	width: 90%;
+	height: 40rem;
+	border-radius: 1rem;
 }
