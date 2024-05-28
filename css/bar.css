@@ -1,7 +1,17 @@
 .topnav {
-	background-color: #333;
 	overflow: hidden;
 	text-align: center;
+	max-width: fit-content;
+	padding: 1rem;
+	margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+	background: rgba(255, 255, 255, 0.27);
+	border-radius: 2rem;
+	box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(9.8px);
+	-webkit-backdrop-filter: blur(9.8px);
+	border: 1px solid rgba(255, 255, 255, 0.48);
 }
 
 .topnav a {
@@ -10,6 +20,7 @@
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
+
 }
 
 .topnav a:hover {
@@ -18,15 +29,20 @@
 }
 
 .topnav a.active {
-	background-color: #04AA6D;
-	color: white;
+	color: black;
+	background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(9.8px);
+	border-radius: 1rem;
+	-webkit-backdrop-filter: blur(9.8px);
 }
 
 .headimage {
 	float: left;
 	padding-left: 25%;
 	padding-right: 25%;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	width: 50%;
 	height: 30%;
+	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
 }
