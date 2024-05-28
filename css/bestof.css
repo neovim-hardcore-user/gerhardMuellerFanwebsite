@@ -1,0 +1,28 @@
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+@keyframes fade {
+    0% { background-color: black; }
+    100% { background-color: lightgray; }
+}
+
+button:hover {
+    animation-name: fade;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.arrows {
+    color: black;
+    background-color: none;
+}
+
+#bw {
+	transform: scaleX(-1);
+}

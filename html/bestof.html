@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../css/bar.css" rel="stylesheet">
+		<link href="../css/text.css" rel="stylesheet">
+		<link href="../css/bestof.css" rel="stylesheet">
+		<script src="../js/video.js"> </script>
+	</head>
+
+	<body>
+		<div class="topnav">
+			<img class="headimage" src="../images/TitelGerhardSchrift.png" /> 
+			<a class="active" href="home.html">Home</a>
+			<a href="bestof.html">BestOf</a>
+			<a href="steckbrief.html">Steckbrief</a>
+			<a href="werdegang.html">Werdegang</a>
+			<a href="galerie.html">Galerie</a>
+		</div>
+
+		<h1>
+			Unser Gerhard Müller Best-Of
+	  	</h1>
+
+		<div class="playback">
+			<iframe id="youtube-video"> </iframe>
+			
+			<div class="button-container">
+				<button onclick="switchVideo('-1')"> <img class="arrows" id="bw" src="../images/arrow.svg" /> </button>
+				<button onclick="switchVideo('1')"> <img class="arrows" src="../images/arrow.svg" /> </button>
+			</div>
+		</div>
+
+	</body>
+</html>
