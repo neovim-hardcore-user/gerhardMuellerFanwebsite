@@ -8,6 +8,7 @@ button {
 	width: 70px;
 	height: 70px;
     position: absolute;
+    top: 50%;
 }
 
 .button_right {
@@ -47,7 +48,7 @@ button:hover {
     display: flex;
     align-items: center;
 	text-align: center;
-	margin: 2rem;
+	padding: 2rem;
 }
 
 #youtube-video {
