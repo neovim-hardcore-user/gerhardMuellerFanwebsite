@@ -26,8 +26,14 @@ fetch('../js/videos.json')
 	.catch(error => console.error('Error fetching video data:', error));
 
 function switchVideo(dir) {
-	if (index > 0 || parseInt(dir) == 1)
-		index += parseInt(dir);
+	index += parseInt(dir);
+	if (index < 0) {
+		index = videos.length - 1;
+	}
+
+	if (index >= videos.length) {
+		index = 0;
+	}
 	console.log(index)
 
 	console.log(videos[index].url)
