@@ -11,10 +11,5 @@
 }
 
 .nextToImage {
-  margin-top: 10%;
-  float: left;
-  width: 30%;
-  position: absolute;
-  left: 15%;
-  padding: 2%;
+  padding: 3%;
 }
