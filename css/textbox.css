@@ -12,11 +12,12 @@
 }
 
 .nextToImage {
-  
   text-align: center;
 }
 
 .textImage {
+  margin-left: 5%;
+  margin-right: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
