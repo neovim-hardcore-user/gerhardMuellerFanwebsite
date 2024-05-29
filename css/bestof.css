@@ -12,11 +12,11 @@
 }
 
 .button_right {
-    left: 90%;
+    right: 5%;
 }
 
 .button_left {
-    right: 90%;
+    left: 5%;
 }
 
 @keyframes fade {
@@ -47,11 +47,10 @@
 .playback {
     align-items: center;
 	text-align: center;
-	padding: 2rem;
 }
 
 #youtube-video {
-	width: 70%;
+	width: 80%;
 	aspect-ratio: 16 / 9;
 	overflow: hidden;
 	margin-left: auto;
