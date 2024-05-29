@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const images = [];
 
-	for (let i = 1; i < 16; ++i) {
+	for (let i = 1; i < 19; ++i) {
 		images.push("../images/galerie/" + i + ".jpg")
 	}
 
