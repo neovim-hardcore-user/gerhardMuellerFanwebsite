@@ -14,7 +14,7 @@ was hindert dich noch, es mit mir zu tun
 
 [Verse 2]
 Und dein Blick, der klebte doch förmlich an mir
-und mein Herz flehte gedanklich: "Lass nicht ab von mir"
+und mein Herz flehte gedanklich: 'Lass nicht ab von mir'
 das war echtes Gedankenlesen
 und es ist so Traumhaft gewesen
 
@@ -32,6 +32,7 @@ Es fühlt sich so an als seien von dir
 nun alle Hämmungen genommen
 Ich glaub ich hab den Panzer gesprengt,
 was hindert dich noch, es mit mir zu tun
+
 Ich glaub ich hab den Panzer gesprengt,
 den Panzer zu deinem Herzen
 Es fühlt sich so an als seien von dir,
