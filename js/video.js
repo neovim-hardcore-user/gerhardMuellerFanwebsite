@@ -9,6 +9,8 @@ class Video {
 const videos = []
 index = 0
 
+
+
 fetch('../js/videos.json')
 	.then(response => response.json())
 	.then(videoData => {
@@ -20,10 +22,10 @@ fetch('../js/videos.json')
 				videoData[i]["subtitle"], 
 			))
 		}
-
-		console.log(videos)
+		insert_content();
 	})
 	.catch(error => console.error('Error fetching video data:', error));
+
 
 function switchVideo(dir) {
 	index += parseInt(dir);
@@ -38,6 +40,15 @@ function switchVideo(dir) {
 
 	console.log(videos[index].url)
 
+	insert_content();
+}
+
+
+function insert_content() {
+	const songtitle = document.getElementById('Songtitle');
+	songtitle.innerHTML = videos[index].title;
+
+	
 	const iframe = document.getElementById('youtube-video');
 	iframe.src = `https://www.youtube.com/embed/${videos[index].id}?autoplay=1`;
 }

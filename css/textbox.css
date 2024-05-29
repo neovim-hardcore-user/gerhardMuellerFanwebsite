@@ -1,13 +1,18 @@
 .glasstextbox {
-  margin-top: 10%;
+  margin: 3rem;
   background: rgba(255, 255, 255, 0.27);
   border-radius: 5rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.8px);
   -webkit-backdrop-filter: blur(9.8px);
   border: 1px solid rgba(255, 255, 255, 0.48);
+  display: block;
+
+}
+
+.nextToImage {
+  margin-top: 10%;
   float: left;
-  text-align: center;
   width: 30%;
   position: absolute;
   left: 15%;
