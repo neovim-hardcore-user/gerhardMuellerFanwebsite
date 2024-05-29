@@ -1,5 +1,4 @@
 .glasstextbox {
-  margin: 3rem;
   background: rgba(255, 255, 255, 0.27);
   border-radius: 5rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -7,7 +6,8 @@
   -webkit-backdrop-filter: blur(9.8px);
   border: 1px solid rgba(255, 255, 255, 0.48);
   display: block;
-  padding: 3%;
+  padding: 5%;
+  margin: 5%;
 
 }
 
@@ -16,12 +16,10 @@
 }
 
 .textImage {
-  margin-left: 5%;
-  margin-right: 5%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  display: flex;
   justify-content: center;
   justify-items: center;
   align-content: center;
+  padding: 5%;
+  scale: auto;
 }
