@@ -10,9 +10,12 @@
 .image {
 	margin-top: 5rem;
 	border-radius: 1rem;
+	transition: box-shadow 0.4s;
+	transition: scale 0.4s;
 }
 
 .image:hover {
 	box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.5);
-	transition: box-shadow 0.4s;
+	scale: 120%;
+	
 }
