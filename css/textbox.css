@@ -8,9 +8,10 @@
   border: 1px solid rgba(255, 255, 255, 0.48);
   display: block;
   padding: 3%;
-  text-align: center;
+
 }
 
 .nextToImage {
   max-width: 40%;
+  text-align: center;
 }
