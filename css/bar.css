@@ -12,6 +12,7 @@
 	backdrop-filter: blur(9.8px);
 	-webkit-backdrop-filter: blur(9.8px);
 	border: 1px solid rgba(255, 255, 255, 0.48);
+	scroll-behavior: smooth;
 }
 
 .topnav a {

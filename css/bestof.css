@@ -5,8 +5,17 @@ button {
     cursor: pointer;
     transition: background-color 0.4s;
 	border-radius: 100%;
-	width: 40px;
-	height: 40px;
+	width: 70px;
+	height: 70px;
+    position: absolute;
+}
+
+.button_right {
+    left: 90%;
+}
+
+.button_left {
+    right: 90%;
 }
 
 @keyframes fade {
@@ -22,9 +31,12 @@ button:hover {
 }
 
 .arrows {
+    width: 40px;
+    height: 40px;
     color: black;
     background-color: none;
 	text-align: center;
+	
 }
 
 #bw {
@@ -32,11 +44,18 @@ button:hover {
 }
 
 .playback {
+    display: flex;
+    align-items: center;
 	text-align: center;
+	margin: 2rem;
 }
 
 #youtube-video {
-	width: 90%;
-	height: 40rem;
+	width: 70%;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	margin-left: auto;
+    margin-right: auto;
+
 	border-radius: 1rem;
 }
