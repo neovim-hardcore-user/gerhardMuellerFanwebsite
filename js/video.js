@@ -1,6 +1,7 @@
 class Video {
-	constructor(id, title, subtitle, cover) {
+	constructor(id, start, title, subtitle, cover) {
 		this.id = id;
+		this.start = start;
 		this.title = title;
 		this.subtitle = subtitle;
 		this.cover = cover;
@@ -14,9 +15,10 @@ function insert_content() {
 	const songtitle = document.getElementById('Songtitle');
 	songtitle.innerHTML = videos[index].title;
 
-	
+
+	console.log(videos[index].start);
 	const iframe = document.getElementById('youtube-video');
-	iframe.src = `https://www.youtube.com/embed/${videos[index].id}?autoplay=1`;
+	iframe.src = `https://www.youtube.com/embed/${videos[index].id}?start=${videos[index].start}&autoplay=1`;
 
 	//Playlist:
 	let playlist = document.getElementById("playlist");
@@ -64,6 +66,7 @@ fetch('../js/videos.json')
 			const i = parseInt(key)
 			videos.push(new Video(
 				videoData[i]["id"], 
+				videoData[i]["start"], 
 				videoData[i]["title"], 
 				videoData[i]["subtitle"], 
 				videoData[i]["cover"], 
