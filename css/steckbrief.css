@@ -2,25 +2,29 @@
 
 #information {
 	font-family: 'Roboto';
-  	border-collapse: collapse;
+	font-size: 20px;
+
 	float: left;
 	width: 40%;
   	margin-left: 10%;
-  	margin-top: 5%;
-
+  	margin-top: 2%;
 
 	background: rgba(255, 255, 255, 0.27);
 
 	border-spacing: 0;
 	border-collapse: separate;
-	border-radius: 1rem;
 	border: 1px solid rgba(255, 255, 255, 0.48);
 }
 
-table td {
+td {
   	text-align: left;
-	width: 30%;
+
 	left: 15%;
 	padding: 2%;
+
+	border: 1px solid rgba(255, 255, 255, 0.48);
 }
 
+#homeimage {
+  	margin-top: 2%;
+}
