@@ -1,5 +1,3 @@
-console.log("balls")
-
 document.addEventListener("DOMContentLoaded", function() {
     const imageContainer = document.getElementById('images');
 
