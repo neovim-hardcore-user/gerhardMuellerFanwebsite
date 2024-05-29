@@ -22,15 +22,35 @@
 			<a href="werdegang.html">Werdegang</a>
 			<a href="galerie.html">Galerie</a>
 		</div>
-		
-		<div class="playback glasstextbox">
-			<h1 id="Songtitle"> </h1>
 
-			<div>
-				<iframe id="youtube-video"> </iframe>
-				
-				<button class="button_left" onclick="switchVideo('-1')"> <img class="arrows" id="bw" src="../images/arrow.svg" /> </button>
-				<button class="button_right" onclick="switchVideo('1')"> <img class="arrows" src="../images/arrow.svg" /> </button>
+
+		
+		
+		<div class="glasstextbox">
+			<div class="playback">
+				<h1 id="Songtitle"> </h1>
+
+				<div>
+					<iframe id="youtube-video"> </iframe>
+					
+					<button class="button_left skip_button" onclick="switchVideo('-1')"> <img class="arrows" id="bw" src="../images/arrow.svg" /> </button>
+					<button class="button_right skip_button" onclick="switchVideo('1')"> <img class="arrows" src="../images/arrow.svg" /> </button>
+				</div>
+			</div>
+		</div>
+
+		<div class="splitView">
+			<div class="playlist_subtitles">
+				<h1>Playlist</h1>
+				<div class="glasstextbox playlist_subtitles">
+					<table class="playlistTable" id="playlist"></table>
+				</div>
+			</div>
+
+			<div class="playlist_subtitles">
+				<h1>Untertitel</h1>
+				<div class="glasstextbox playlist_subtitles">
+				</div>
 			</div>
 		</div>
 

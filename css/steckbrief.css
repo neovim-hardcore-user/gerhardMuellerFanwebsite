@@ -6,8 +6,8 @@
 
 	float: left;
 	width: 40%;
-  	margin-left: 10%;
-  	margin-top: 2%;
+  margin-left: 10%;
+  margin-top: 2%;
 
 	background: rgba(255, 255, 255, 0.27);
 
@@ -17,7 +17,7 @@
 }
 
 td {
-  	text-align: left;
+  text-align: left;
 
 	left: 15%;
 	padding: 2%;

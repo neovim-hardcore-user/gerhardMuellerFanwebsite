@@ -9,7 +9,37 @@ class Video {
 const videos = []
 index = 0
 
+function insert_content() {
+	const songtitle = document.getElementById('Songtitle');
+	songtitle.innerHTML = videos[index].title;
 
+	
+	const iframe = document.getElementById('youtube-video');
+	iframe.src = `https://www.youtube.com/embed/${videos[index].id}?autoplay=1`;
+
+	//Playlist:
+	let playlist = document.getElementById("playlist");
+	while (playlist.rows.length > 0) {
+      playlist.deleteRow(0);
+  }
+	
+	for (let i = 0; i < videos.length; ++i) {
+		let r = playlist.insertRow();
+		let c = r.insertCell(0);
+
+		c.innerHTML = videos[i].title;
+		if (index == i) {
+			c.className = "playlist_button currentSong";
+		} else {
+			c.className = "playlist_button";
+		}
+		c.onclick = function() {
+      jumpToVideo(i);
+    };
+
+		
+	}
+}
 
 fetch('../js/videos.json')
 	.then(response => response.json())
@@ -26,6 +56,10 @@ fetch('../js/videos.json')
 	})
 	.catch(error => console.error('Error fetching video data:', error));
 
+function jumpToVideo(i) {
+	index = i;
+	insert_content();
+}
 
 function switchVideo(dir) {
 	index += parseInt(dir);
@@ -44,11 +78,4 @@ function switchVideo(dir) {
 }
 
 
-function insert_content() {
-	const songtitle = document.getElementById('Songtitle');
-	songtitle.innerHTML = videos[index].title;
 
-	
-	const iframe = document.getElementById('youtube-video');
-	iframe.src = `https://www.youtube.com/embed/${videos[index].id}?autoplay=1`;
-}
