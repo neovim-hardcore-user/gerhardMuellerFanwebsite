@@ -2,12 +2,12 @@
 
 h1 {
     width: 90%;
-    margin: 10px auto;
+    margin: 30px auto;
     background: none;
     text-align: center;
     font-size: 40px;
-		font-family: 'Roboto';
-		text-decoration: underline;
+	font-family: 'Roboto';
+	text-decoration: underline;
 }
 
 .information {
