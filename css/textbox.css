@@ -11,7 +11,7 @@
 
 }
 
-.textImage {
+.splitView {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   justify-content: center;
