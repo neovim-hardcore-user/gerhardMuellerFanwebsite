@@ -39,6 +39,10 @@ function insert_content() {
 
 		
 	}
+	let subtitles = document.getElementById("subtitles");
+
+	subtitles.innerHTML = videos[index].subtitle.replace(/\n/g, "<br>");;
+	
 }
 
 fetch('../js/videos.json')

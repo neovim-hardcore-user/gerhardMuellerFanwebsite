@@ -61,7 +61,7 @@
 }
 
 .playlist_subtitles {
-    width: 85%;
+    width: 95%;
 }
 
 .playlistTable {
@@ -96,4 +96,10 @@ td {
 .currentSong {
     color: black;
     background-color: rgba(255, 255, 255, 0.7);
+}
+
+.subtitles {
+    transition: height 0.4s;
+    color: white;
+    font-size: 20px;
 }
