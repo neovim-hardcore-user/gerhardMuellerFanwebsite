@@ -76,17 +76,16 @@ td {
     color: white;
     font-size: 20px;
     margin: 0px;
-    padding: 1%;
-    
-
-	border: 1px solid rgba(255, 255, 255, 0.48);
+    border-radius: 1rem;
 }
 
 .playlist_button {
     cursor: pointer;
     transition: background-color 0.4s;
-    width: 100%;
-    height: 50px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .playlist_button:hover {
@@ -102,4 +101,12 @@ td {
     transition: height 0.4s;
     color: white;
     font-size: 20px;
+}
+
+.cover {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
 }

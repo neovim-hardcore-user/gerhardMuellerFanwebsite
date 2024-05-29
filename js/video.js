@@ -1,8 +1,9 @@
 class Video {
-	constructor(id, title, subtitle) {
+	constructor(id, title, subtitle, cover) {
 		this.id = id;
 		this.title = title;
 		this.subtitle = subtitle;
+		this.cover = cover;
 	}
 }
 
@@ -25,9 +26,20 @@ function insert_content() {
 	
 	for (let i = 0; i < videos.length; ++i) {
 		let r = playlist.insertRow();
+		
 		let c = r.insertCell(0);
 
-		c.innerHTML = videos[i].title;
+		let cover = document.createElement("img");
+		
+		cover.src = "../images/covers/" + videos[i].cover;
+		cover.className = "cover";
+
+		let title = document.createTextNode(videos[i].title);
+
+
+		c.appendChild(cover);
+		c.appendChild(title);
+		
 		if (index == i) {
 			c.className = "playlist_button currentSong";
 		} else {
@@ -54,6 +66,7 @@ fetch('../js/videos.json')
 				videoData[i]["id"], 
 				videoData[i]["title"], 
 				videoData[i]["subtitle"], 
+				videoData[i]["cover"], 
 			))
 		}
 		insert_content();
