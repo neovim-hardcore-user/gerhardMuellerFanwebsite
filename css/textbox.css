@@ -12,11 +12,15 @@
 }
 
 .nextToImage {
-  max-width: 40%;
+  
   text-align: center;
-  float: left;
 }
 
 .textImage {
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
 }
