@@ -1,7 +1,10 @@
 body {
   //background: rgb(0,216,222);
   //background: radial-gradient(circle, rgba(0,216,222,1) 0%, rgba(200,0,230,1) 49%, rgba(107,0,194,1) 97%);
-  background-image: linear-gradient(to right bottom, #ff61bb, #fe5ec5, #fb5cd1, #f75bdd, #f15ce9, #d772f6, #bd83fd, #a490ff, #7ea6ff, #5eb8ff, #50c7ff, #5fd3fb);
+  
+  //background-image: linear-gradient(to right bottom, #ff61bb, #fe5ec5, #fb5cd1, #f75bdd, #f15ce9, #d772f6, #bd83fd, #a490ff, #7ea6ff, #5eb8ff, #50c7ff, #5fd3fb);
+  
+  background-image: linear-gradient(to right bottom, #ff3eac, #ff3aba, #fd37c8, #f938d8, #f33be8, #d65df6, #b873fe, #9c83ff, #719bff, #44afff, #26c0ff, #3ccdff);
 }
 
 
