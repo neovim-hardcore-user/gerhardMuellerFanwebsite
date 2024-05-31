@@ -13,47 +13,49 @@
 		<script src="../js/video.js"> </script>
 	</head>
 
-	<body>
-		<div class="topnav">
-			<img class="headimage" src="../images/TitelGerhardSchrift.png" /> 
-			<a href="home.html">Home</a>
-			<a class="active" href="bestof.html">BestOf</a>
-			<a href="steckbrief.html">Steckbrief</a>
-			<a href="werdegang.html">Werdegang</a>
-			<a href="galerie.html">Galerie</a>
-		</div>
+    <body>
+    	<div class="topnav">
+    		<img class="headimage" src="../images/TitelGerhardSchrift.png" />
+    		<a href="home.html">Home</a>
+    		<a class="active" href="bestof.html">BestOf</a>
+    		<a href="steckbrief.html">Steckbrief</a>
+    		<a href="werdegang.html">Werdegang</a>
+    		<a href="galerie.html">Galerie</a>
+    	</div>
 
 
-		
-		
-		<div class="glasstextbox">
-			<div class="playback">
-				<h1 id="Songtitle"> </h1>
 
-				<div>
-					<iframe id="youtube-video"> </iframe>
-					
-					<button class="button_left skip_button" onclick="switchVideo('-1')"> <img class="arrows" id="bw" src="../images/arrow.svg" /> </button>
-					<button class="button_right skip_button" onclick="switchVideo('1')"> <img class="arrows" src="../images/arrow.svg" /> </button>
-				</div>
-			</div>
-		</div>
 
-		<div class="splitView">
-			<div class="playlist_subtitles">
-				<h1>Playlist</h1>
-				<div class="glasstextbox">
-					<table class="playlistTable" id="playlist"></table>
-				</div>
-			</div>
+    	<div class="glasstextbox">
+    		<div class="playback">
+    			<h1 id="Songtitle"> </h1>
 
-			<div class="playlist_subtitles">
-				<h1>Lyrics</h1>
-				<div class="glasstextbox">
-					<p id="subtitles" class="subtitles"></p>
-				</div>
-			</div>
-		</div>
+    			<div>
+    				<iframe id="youtube-video"> </iframe>
 
-	</body>
+    				<button class="button_left skip_button" onclick="switchVideo('-1')"> <img class="arrows" id="bw" src="../images/arrow.svg" /> </button>
+    				<button class="button_right skip_button" onclick="switchVideo('1')"> <img class="arrows" src="../images/arrow.svg" /> </button>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="splitView">
+    		<div class="playlist_subtitles">
+    			<h1>Playlist</h1>
+    			<div class="glasstextbox">
+    				<table class="playlistTable" id="playlist"></table>
+    			</div>
+    		</div>
+
+    		<div class="playlist_subtitles">
+    			<h1>Lyrics</h1>
+    			<div class="glasstextbox">
+    				<p id="subtitles" class="subtitles"></p>
+    			</div>
+    		</div>
+    	</div>
+
+    </body>
+
 </html>
+
