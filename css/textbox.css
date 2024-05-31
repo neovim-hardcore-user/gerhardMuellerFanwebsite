@@ -1,22 +1,23 @@
 .glasstextbox {
-  color: white;
-  background: rgba(255, 255, 255, 0.27);
-  border-radius: 5rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.8px);
-  -webkit-backdrop-filter: blur(9.8px);
-  border: 1px solid rgba(255, 255, 255, 0.48);
-  display: block;
-  padding: 5%;
-  margin: 5%;
+    color: white;
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 5rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    display: block;
+    padding: 5%;
+    margin: 5%;
 }
 
 .splitView {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  padding: 5%;
-  scale: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    padding: 5%;
+    scale: auto;
 }
+

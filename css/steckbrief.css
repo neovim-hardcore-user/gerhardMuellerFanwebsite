@@ -1,29 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 #information {
-	color: white;
-	font-family: 'Roboto';
-	font-size: 20px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 20px;
 
+    background: rgba(255, 255, 255, 0.27);
 
-	background: rgba(255, 255, 255, 0.27);
+    border-spacing: 0;
+    border-collapse: separate;
+    border: 1px solid rgba(255, 255, 255, 0.48);
 
-	border-spacing: 0;
-	border-collapse: separate;
-	border: 1px solid rgba(255, 255, 255, 0.48);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
 
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.8px);
-  -webkit-backdrop-filter: blur(9.8px);
-
-  margin: 5%;
+    margin: 5%;
 }
 
 td {
-	
-  text-align: left;
-	padding: 2%;
+    text-align: left;
+    padding: 2%;
 
-	border: 1px solid rgba(255, 255, 255, 0.48);
+    border: 1px solid rgba(255, 255, 255, 0.48);
 }
 

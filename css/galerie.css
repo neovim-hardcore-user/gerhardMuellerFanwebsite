@@ -1,21 +1,21 @@
 .images {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	justify-content: center;
-	justify-items: center;
-	align-content: center;
-	align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 
 .image {
-	margin-top: 5rem;
-	border-radius: 1rem;
-	transition: box-shadow 0.4s;
-	transition: scale 0.4s;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    transition: box-shadow 0.4s;
+    transition: scale 0.4s;
 }
 
 .image:hover {
-	box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.5);
-	scale: 120%;
-	
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.5);
+    scale: 120%;
 }
+
