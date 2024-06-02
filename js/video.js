@@ -35,8 +35,9 @@ function insert_content() {
         cover.src = "../images/covers/" + videos[i].cover;
         cover.className = "cover";
 
-        let title = document.createTextNode(videos[i].title);
+        let title = document.createTextNode(i + 1 + ". " + videos[i].title);
 
+        
         c.appendChild(cover);
         c.appendChild(title);
 

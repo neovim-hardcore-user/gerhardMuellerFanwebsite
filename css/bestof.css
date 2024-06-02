@@ -4,13 +4,13 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.4s;
-	border-radius: 100%;
-	
-	width: 70px;
-	height: 70px;
-	position: absolute;
+    border-radius: 100%;
+
+    width: 70px;
+    height: 70px;
+    position: absolute;
     top: 50%;
-    
+
     backdrop-filter: blur(9.8px);
     -webkit-backdrop-filter: blur(9.8px);
 }
@@ -24,8 +24,12 @@
 }
 
 @keyframes fade {
-    0% { background-color: rgba(255, 255, 255, 0.4);; }
-    100% { background-color: rgba(255, 255, 255, 0.7);; }
+    0% {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
 }
 
 .skip_button:hover {
@@ -40,27 +44,26 @@
     height: 40px;
     color: black;
     background-color: none;
-	text-align: center;
-	
+    text-align: center;
 }
 
 #bw {
-	transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 .playback {
     align-items: center;
-	text-align: center;
+    text-align: center;
 }
 
 #youtube-video {
-	width: 80%;
-	aspect-ratio: 16 / 9;
-	overflow: hidden;
-	margin-left: auto;
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin-left: auto;
     margin-right: auto;
 
-	border-radius: 2rem;
+    border-radius: 2rem;
 }
 
 h1#Songtitle {
@@ -73,9 +76,9 @@ h1#Songtitle {
 
 .playlistTable {
     border-spacing: 0;
-	border-collapse: separate;
-	width: 100%;
-	padding: 0px;
+    border-collapse: separate;
+    width: 100%;
+    padding: 0px;
 }
 
 td {
@@ -115,3 +118,4 @@ td {
     height: 50px;
     border-radius: 100%;
 }
+
