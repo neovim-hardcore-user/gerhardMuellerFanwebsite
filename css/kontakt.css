@@ -8,3 +8,8 @@
 	text-align: left;
 	background: rgba(255, 255, 255, 0.3);
 }
+
+.mapView {
+	border-radius: 2rem;
+	margin: 20px;
+}
