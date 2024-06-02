@@ -14,8 +14,7 @@ index = 0;
 function insert_content() {
     const songtitle = document.getElementById("Songtitle");
     songtitle.innerHTML = videos[index].title;
-
-    console.log(videos[index].start);
+    
     const iframe = document.getElementById("youtube-video");
     iframe.src = `https://www.youtube.com/embed/${videos[index].id}?start=${videos[index].start}&autoplay=1`;
 
@@ -88,9 +87,6 @@ function switchVideo(dir) {
     if (index >= videos.length) {
         index = 0;
     }
-    console.log(index);
-
-    console.log(videos[index].id);
 
     insert_content();
 }
