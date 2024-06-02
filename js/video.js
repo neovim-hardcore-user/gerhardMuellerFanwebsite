@@ -90,7 +90,7 @@ function switchVideo(dir) {
     }
     console.log(index);
 
-    console.log(videos[index].url);
+    console.log(videos[index].id);
 
     insert_content();
 }
