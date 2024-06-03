@@ -1,4 +1,4 @@
-[Verse1]
+[Verse 1]
 Ich hab heute Lust
 Hast du das gewusst?
 Komm wir lassen heut mal einiges raus
@@ -14,7 +14,7 @@ Hab ich dir denn schon erzählt
 Ich will es du willst es
 Wenn der Gedanke dir gefällt
 
-[Verse2]
+[Verse 2]
 Schöne Stunden zu zweit, 
 Dafür hat man doch Zeit
 Komm wir lassen den Gefühlen freien Lauf
@@ -30,7 +30,7 @@ Hab ich dir denn schon erzählt
 Ich will es du willst es
 Wenn der Gedanke dir gefällt
 
-[Verse3]
+[Verse 3]
 Ich hab heute Lust
 Jedoch nicht auf Frust
 Das ist doch hoffentlich kein Problem

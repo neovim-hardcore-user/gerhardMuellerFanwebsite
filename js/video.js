@@ -11,47 +11,48 @@ class Video {
 const videos = [];
 index = 0;
 
-function insert_content() {
-    const songtitle = document.getElementById("Songtitle");
-    songtitle.innerHTML = videos[index].title;
-    
-    const iframe = document.getElementById("youtube-video");
-    iframe.src = `https://www.youtube.com/embed/${videos[index].id}?start=${videos[index].start}&autoplay=1`;
 
-    //Playlist:
-    let playlist = document.getElementById("playlist");
+
+
+function updatePlaylist() {
+    const playlist = document.getElementById("playlist");
+    
     while (playlist.rows.length > 0) {
         playlist.deleteRow(0);
     }
 
     for (let i = 0; i < videos.length; ++i) {
-        let r = playlist.insertRow();
+        const row = playlist.insertRow();
 
-        let c = r.insertCell(0);
+        const cell = row.insertCell(0);
 
-        let cover = document.createElement("img");
+        const cover = document.createElement("img");
 
-        cover.src = "../images/covers/" + videos[i].cover;
+        cover.src = `../images/covers/${videos[i].cover}`;
         cover.className = "cover";
 
-        let title = document.createTextNode(i + 1 + ". " + videos[i].title);
+        const title = document.createTextNode(`${i + 1}. ${videos[i].title}`);
 
         
-        c.appendChild(cover);
-        c.appendChild(title);
+        cell.appendChild(cover);
+        cell.appendChild(title);
 
-        if (index == i) {
-            c.className = "playlist_button currentSong";
-        } else {
-            c.className = "playlist_button";
-        }
-        c.onclick = function () {
-            jumpToVideo(i);
-        };
+        cell.className = index === i ? "playlist_button currentSong" : "playlist_button";
+        
+        cell.onclick = () => jumpToVideo(i);
     }
-    let subtitles = document.getElementById("subtitles");
+}
 
+function insert_content() {
+    const songtitle = document.getElementById("Songtitle");
+    const iframe = document.getElementById("youtube-video");
+    const subtitles = document.getElementById("subtitles");
+
+    
+    songtitle.innerHTML = videos[index].title;
+    iframe.src = `https://www.youtube.com/embed/${videos[index].id}?start=${videos[index].start}&autoplay=1`;
     subtitles.innerHTML = videos[index].subtitle.replace(/\n/g, "<br>");
+    updatePlaylist();
 }
 
 fetch("../js/videos.json")

@@ -1,4 +1,4 @@
-[Verse1]
+[Verse 1]
 Als Kind schon, da wollte ich viel mehr
 Und für mich war sonnenklar:
 Ich werde Millionär, 
@@ -16,7 +16,7 @@ Und auf Wolken schweben
 Ist noch viel schöner seit ich es fand:
 Entdecke in dir: Das goldene Land
 
-[Verse2]
+[Verse 2]
 Jeder Mensch muss für sich im Leben
 Seinen ganz eigenen
 Individuellen 
@@ -34,7 +34,7 @@ Willst du auf Wolken schweben
 Nimm dein Leben in deine eigne Hand:
 Entdecke in dir: Das goldene Land
 
-[Verse3]
+[Verse 3]
 Es wird ihn auch
 Für dich geben
 Deinen idealen Platz im Leben
