@@ -18,6 +18,8 @@ button {
 	color: white;
 	background-color: rgba(0, 0, 0, 0.0);
 
+	cursor: pointer;
+
     text-align: center;
     padding: 14px 16px;
     margin: 0.1rem;
