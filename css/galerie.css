@@ -5,6 +5,7 @@
     justify-items: center;
     align-content: center;
     align-items: center;
+	cursor: pointer;
 }
 
 .image {
@@ -19,3 +20,15 @@
     scale: 120%;
 }
 
+#overlay {
+	display: grid;
+	height: 100%;
+	text-align: center;
+}
+
+#overlay-image {
+	width: 33%;
+	height: 50rem;
+	margin: auto;
+    border-radius: 1rem;
+}

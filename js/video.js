@@ -52,6 +52,7 @@ function insert_content() {
     updatePlaylist();
 }
 
+
 fetch("../js/videos.json")
     .then((response) => response.json())
     .then((videoData) => {
