@@ -11,9 +11,6 @@ class Video {
 const videos = [];
 index = 0;
 
-
-
-
 function updatePlaylist() {
     const playlist = document.getElementById("playlist");
     
@@ -91,4 +88,3 @@ function switchVideo(dir) {
 
     insert_content();
 }
-
