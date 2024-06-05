@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             overlayImage.src = images[index].src;
             overlayImage.classList.add("active");
-        }, 500);
+        }, 200);
     }
 
     overlay.addEventListener("click", (event) => {

@@ -45,7 +45,7 @@
     margin: auto;
     border-radius: 1rem;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.2s ease;
 }
 
 #overlay-image.active {
