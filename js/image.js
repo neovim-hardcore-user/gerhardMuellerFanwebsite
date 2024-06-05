@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const centerY = rect.height / 2;
 
 
-            const maxTilt = 5000 / (image.clientWidth + image.clientHeight);
+            const maxTilt = 2000 / image.clientHeight;
 
             const deltaX = x - centerX;
             const deltaY = y - centerY;
 
-            const rotateX = (deltaY / centerY) * -maxTilt;
-            const rotateY = (deltaX / centerX) * maxTilt;
+            const rotateX = (deltaY / centerY) * maxTilt;
+            const rotateY = (deltaX / centerX) * -maxTilt;
 
             image.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
         });

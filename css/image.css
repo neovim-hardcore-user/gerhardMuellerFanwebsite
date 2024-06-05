@@ -12,5 +12,5 @@
 }
 
 .lean-image {
-	transition: transform 1ms ease;
+	transition: transform 0.1s ease;
 }
