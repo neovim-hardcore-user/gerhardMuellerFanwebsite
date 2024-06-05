@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const image = document.getElementById('lean-image');
+    const images = document.getElementsByClassName('lean-image');
 
-    if (image) {
+    Array.from(images).forEach(image => {
         document.addEventListener('mousemove', (e) => {
             const rect = image.getBoundingClientRect();
             const x = e.clientX - rect.left;
@@ -24,8 +24,5 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('mouseleave', () => {
             image.style.transform = 'rotateX(0) rotateY(0)';
         });
-    } else {
-        console.error('Element with id "lean-image" not found');
-    }
+    });
 });
-
