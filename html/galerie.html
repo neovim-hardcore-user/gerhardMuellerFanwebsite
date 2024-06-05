@@ -1,38 +1,45 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="../css/index.css" rel="stylesheet">
-		<link href="../css/bar.css" rel="stylesheet">
-		<link href="../css/text.css" rel="stylesheet">
-		<link href="../css/textbox.css" rel="stylesheet">
-		<link href="../css/image.css" rel="stylesheet">
-		<link href="../css/galerie.css" rel="stylesheet">
-		<link rel="icon" href="../favicon.png">
-		<title>Gerhard Müller Fanpage</title>
-		<script src="../js/galerie.js"> </script>
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/bar.css" rel="stylesheet">
+    <link href="../css/text.css" rel="stylesheet">
+    <link href="../css/textbox.css" rel="stylesheet">
+    <link href="../css/image.css" rel="stylesheet">
+    <link href="../css/galerie.css" rel="stylesheet">
+    <link rel="icon" href="../favicon.png">
+    <title>Gerhard Müller Fanpage</title>
+    <script src="../js/galerie.js" defer></script>
+</head>
+<body>
+    <div class="topnav">
+    	<img class="headimage" src="../images/TitelGerhardSchrift.png" />
+    	<button class="bar-button" onclick="window.location.href='home.html'">Home</a>
+    	<button class="bar-button" onclick="window.location.href='bestof.html'">BestOf</a>
+    	<button class="bar-button" onclick="window.location.href='steckbrief.html'">Steckbrief</a>
+    	<button class="bar-button" onclick="window.location.href='werdegang.html'">Werdegang</a>
+    	<button class="bar-button active" onclick="window.location.href='galerie.html'">Galerie</a>
+    	<button class="bar-button" onclick="window.location.href='kontakt.html'">Kontakt</a>
+    </div>
 
-    <body>
-    	<div class="topnav">
-    		<img class="headimage" src="../images/TitelGerhardSchrift.png" />
-    		<button class="bar-button" onclick="window.location.href='home.html'">Home</a>
-    		<button class="bar-button" onclick="window.location.href='bestof.html'">BestOf</a>
-    		<button class="bar-button" onclick="window.location.href='steckbrief.html'">Steckbrief</a>
-    		<button class="bar-button" onclick="window.location.href='werdegang.html'">Werdegang</a>
-    		<button class="bar-button active" onclick="window.location.href='galerie.html'">Galerie</a>
-    		<button class="bar-button" onclick="window.location.href='kontakt.html'">Kontakt</a>
-    	</div>
+
+    <div class="glasstextbox">
+        <h1>Gerhard Müller's Galerie</h1>
+        <div class="images" id="images"></div>
+    </div>
+
+    
 
 
-    	<div class="glasstextbox">
-    		<h1>
-    			Gerhard Müller's Galerie
-    		</h1>
-
-			<div id="overlay"></div>
-    		<div class="images" id="images"> </div>
-    	</div>
-    </body>
+    <div id="overlay" class="overlay">
+        <span class="close">&times;</span>
+        <img class="overlay-image" id="overlay-image">
+        <div class="overlay-controls">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </div>
+</body>
 </html>
