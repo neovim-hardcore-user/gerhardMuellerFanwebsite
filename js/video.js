@@ -46,10 +46,14 @@ function insert_content() {
     const subtitles = document.getElementById("subtitles");
 
     
-    songtitle.innerHTML = videos[index].title;
-    iframe.src = `https://www.youtube.com/embed/${videos[index].id}?start=${videos[index].start}&autoplay=1`;
+    songtitle.innerHTML = videos[index].title; 
     subtitles.innerHTML = videos[index].subtitle.replace(/\n/g, "<br>");
     updatePlaylist();
+
+	player.loadVideoById({
+		videoId: videos[index].id, 
+		startSeconds: videos[index].start
+	})
 }
 
 
@@ -68,9 +72,47 @@ fetch("../js/videos.json")
                 ),
             );
         }
-        insert_content();
+
+        
     })
     .catch((error) => console.error("Error fetching video data:", error));
+
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+var player;
+
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player('youtube-video', {
+		videoId: videos[index].id,
+		events: {
+			'onReady': onPlayerReady, 
+			'onStateChange': onPlayerStateChange, 
+    	}
+  	});
+}
+
+function onPlayerReady(event) {
+	event.target.playVideo();}
+
+function onPlayerStateChange(event) {
+	var playPauseButton = document.getElementById('play-pause-button');
+
+	switch(event.data) {
+		case YT.PlayerState.PLAYING:
+		  	playPauseButton.innerHTML = "⏸";
+		  	break;
+		case YT.PlayerState.PAUSED:
+		case YT.PlayerState.ENDED:
+			playPauseButton.innerHTML = "&#9658;";
+		  	break;
+  	}
+}
+
 
 function jumpToVideo(i) {
     index = i;
@@ -89,3 +131,13 @@ function switchVideo(dir) {
 
     insert_content();
 }
+
+function pausePlay() {
+	if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+		player.pauseVideo();
+	} else {
+		player.playVideo();
+	}
+}
+
+

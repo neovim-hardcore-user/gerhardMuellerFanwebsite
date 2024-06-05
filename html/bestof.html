@@ -10,7 +10,12 @@
 		<link href="../css/textbox.css" rel="stylesheet">
 		<link rel="icon" href="../favicon.png">
 		<title>Gerhard Müller Fanpage</title>
+	
+
 		<script src="../js/video.js"> </script>
+		
+		
+		
 	</head>
 
     <body>
@@ -27,10 +32,12 @@
 
 		<h1 id="Songtitle"> </h1>
 
-		<div class="playback">
-			<button class="button_left skip_button" onclick="switchVideo('-1')"> <img class="arrows" id="bw" src="../images/arrow.svg" /> </button>
-			<iframe id="youtube-video"  gesture="media" allow="encrypted-media" allowfullscreen> </iframe>
-			<button class="button_right skip_button" onclick="switchVideo('1')"> <img class="arrows" src="../images/arrow.svg" /> </button>
+		<div id="youtube-video"></div>
+
+		<div class = "playback">
+			<button class="button_left skip_button" onclick="switchVideo('-1')">&#10094;</button>
+			<button class="skip_button" id="play-pause-button" onclick="pausePlay()">&#9658;</button>
+			<button class="button_right skip_button" onclick="switchVideo('1')">&#10095;</button>
 		</div>
 
 
