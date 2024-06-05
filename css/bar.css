@@ -14,9 +14,10 @@
     border: 1px solid rgba(255, 255, 255, 0.48);
 }
 
-button {
+.bar-button {
 	color: white;
 	background-color: rgba(0, 0, 0, 0.0);
+    transition: background-color 0.4s;
 
 	cursor: pointer;
 
@@ -29,11 +30,10 @@ button {
     border-radius: 1rem;
 	border-width: 0px;
 
-    transition: background-color 0.4s;
 }
 
-button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+.bar-button:hover {
+    background-color: rgba(255, 255, 255, 0.48);
     color: black;
     border-radius: 1rem;
 }
