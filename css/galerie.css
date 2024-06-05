@@ -39,7 +39,9 @@
 }
 
 #overlay-image {
-	size: 100vh;
+	height: 90vh;
+	width: auto;
+    max-width: 100%;
     margin: auto;
     border-radius: 1rem;
     opacity: 0;
