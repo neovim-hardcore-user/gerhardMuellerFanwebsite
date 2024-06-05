@@ -1,4 +1,4 @@
-#homeimage {
+.homeimage {
     background-color: lightgray;
     background: rgba(255, 255, 255, 0.27);
     border-radius: 5rem;
@@ -11,3 +11,6 @@
 	margin-right: 5rem;
 }
 
+#lean-image {
+	transition: transform 0.1s ease-out;
+}
