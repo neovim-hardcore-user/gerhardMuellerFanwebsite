@@ -6,6 +6,9 @@
     transition: background-color 0.4s;
     border-radius: 100%;
 
+	width: 60px;
+	height: 60px;
+
     backdrop-filter: blur(9.8px);
     -webkit-backdrop-filter: blur(9.8px);
 }

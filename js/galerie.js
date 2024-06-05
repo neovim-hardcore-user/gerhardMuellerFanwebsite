@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         overlay.classList.add("active");
         setTimeout(() => {
             overlayImage.classList.add("active");
-        }, 10);
+        }, 1);
     }
 
     function closeOverlay() {

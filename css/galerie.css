@@ -65,7 +65,7 @@
 .overlay-controls .prev, .overlay-controls .next {
     color: white;
     font-size: 3rem;
-    padding: 1rem;
+    padding: 2rem;
     cursor: pointer;
 }
 
@@ -77,4 +77,5 @@
     font-size: 5rem;
     font-weight: bold;
     cursor: pointer;
+	z-index: 2000;
 }
