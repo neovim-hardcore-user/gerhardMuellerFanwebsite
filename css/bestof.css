@@ -6,8 +6,6 @@
     transition: background-color 0.4s;
     border-radius: 100%;
 
-
-
     backdrop-filter: blur(9.8px);
     -webkit-backdrop-filter: blur(9.8px);
 }
@@ -20,24 +18,13 @@
     left: 5%;
 }
 
-@keyframes fade {
-    0% {
-        background-color: rgba(255, 255, 255, 0.4);
-    }
-    100% {
-        background-color: rgba(255, 255, 255, 0.7);
-    }
-}
-
 .skip_button:hover {
-    animation-name: fade;
-    animation-duration: 0.4s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 100px;
 }
 
 .arrows {
-    width: 40px;
+    width: 35px;
     height: 40px;
     color: black;
     background-color: none;
