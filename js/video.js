@@ -89,7 +89,8 @@ var player;
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('youtube-video', {
 		events: {
-			'onReady': onPlayerReady, 
+			'onReady': onPlayerReady,
+      		'onStateChange': onPlayerStateChange
     	}
   	});
 }
@@ -98,6 +99,7 @@ function onPlayerReady(event) {
 	insert_content();
 	event.target.playVideo();
 }
+
 
 function onPlayerStateChange(event) {
 	var playPauseButton = document.getElementById('play-pause-button');
