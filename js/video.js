@@ -88,23 +88,23 @@ var player;
 
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('youtube-video', {
-		videoId: videos[index].id,
 		events: {
 			'onReady': onPlayerReady, 
-			'onStateChange': onPlayerStateChange, 
     	}
   	});
 }
 
 function onPlayerReady(event) {
-	event.target.playVideo();}
+	insert_content();
+	event.target.playVideo();
+}
 
 function onPlayerStateChange(event) {
 	var playPauseButton = document.getElementById('play-pause-button');
 
 	switch(event.data) {
 		case YT.PlayerState.PLAYING:
-		  	playPauseButton.innerHTML = "⏸";
+		  	playPauseButton.innerHTML = "&#9208;";
 		  	break;
 		case YT.PlayerState.PAUSED:
 		case YT.PlayerState.ENDED:
