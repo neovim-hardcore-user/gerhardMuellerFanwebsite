@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let i = 1; i < 19; ++i) {
         let img = document.createElement("img");
         img.src = "../images/galerie/" + i + ".jpg";
-        img.className = "image lean-image";
+        img.className = "image";
         imageContainer.appendChild(img);
         images.push(img);
 
