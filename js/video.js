@@ -11,8 +11,9 @@ class Video {
 const videos = [];
 index = 0;
 
-function updatePlaylist() {
-    const playlist = document.getElementById("playlist");
+
+function createPlaylist() {
+	const playlist = document.getElementById("playlist");
     
     while (playlist.rows.length > 0) {
         playlist.deleteRow(0);
@@ -37,6 +38,15 @@ function updatePlaylist() {
         cell.className = index === i ? "playlist_button currentSong" : "playlist_button";
         
         cell.onclick = () => jumpToVideo(i);
+    }
+}
+
+function updatePlaylist() {
+    const songs = document.getElementsByClassName("playlist_button");
+    
+
+    for (let i = 0; i < videos.length; ++i) {
+        songs[i].className = index === i ? "playlist_button currentSong" : "playlist_button";
     }
 }
 
@@ -96,6 +106,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
+	createPlaylist();
 	insert_content();
 	event.target.playVideo();
 }
