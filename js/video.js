@@ -106,11 +106,11 @@ function onPlayerStateChange(event) {
 
 	switch(event.data) {
 		case YT.PlayerState.PLAYING:
-		  	playPauseButton.innerHTML = "&#9208;";
+		  	playPauseButton.innerHTML = "⏸";
 		  	break;
 		case YT.PlayerState.PAUSED:
 		case YT.PlayerState.ENDED:
-			playPauseButton.innerHTML = "&#9658;";
+			playPauseButton.innerHTML = "▶";
 		  	break;
   	}
 }
