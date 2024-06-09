@@ -40,12 +40,12 @@
 }
 
 #youtube-video {
-    width: 80%;
+    width: 60%;
     aspect-ratio: 16 / 9;
 	height: auto;
 
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
 	margin-bottom: 30px;
 
     border-radius: 2rem;
