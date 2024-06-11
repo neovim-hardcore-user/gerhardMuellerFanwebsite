@@ -63,10 +63,11 @@
     align-items: center;
     transform: translateY(-50%);
 	user-select: none;
+	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8));
 }
 
 .overlay-controls .prev, .overlay-controls .next {
-	color: rgba(255, 255, 255, 0.4);
+	color: rgba(255, 255, 255, 0.6);
     font-size: 3rem;
     padding: 2rem;
     cursor: pointer;
@@ -78,7 +79,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
 	font-size: 5rem;
     font-weight: bold;
     cursor: pointer;
