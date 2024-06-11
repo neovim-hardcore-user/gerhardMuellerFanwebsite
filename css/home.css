@@ -1,0 +1,44 @@
+#disclaimer {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 800px;
+    height: fit-content;
+	justify-content: center;
+	border-radius: 2rem;
+	background-color: rgba(0, 0, 0, 0.7);
+
+	padding: 2rem;
+
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+
+#disclaimer.active {
+	display: block;
+}
+
+#disclaimer.visible {
+	opacity: 1;
+}
+
+#disclaimerText {
+	color: red;
+}
+
+.close_disclaimer {
+	position: fixed;
+	top: 30px;
+	right:30px;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgba(255, 255, 255, 0.3);
+	border: none;
+	font-size: 60px;
+	transition: color 0.2s ease;
+}
+
+.close_disclaimer:hover {
+	color: rgba(255, 255, 255, 1);
+}

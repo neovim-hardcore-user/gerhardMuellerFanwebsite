@@ -34,10 +34,16 @@
     justify-content: center;
     cursor: pointer;
 	border-radius: 0rem;
+	opacity: 0;
+	transition: opacity 0.2s ease;
 }
 
 #overlay.active {
-    display: flex;
+	display: flex;
+}
+
+#overlay.visible {
+	opacity: 1;
 }
 
 #overlay-image {

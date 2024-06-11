@@ -25,14 +25,20 @@ document.addEventListener("DOMContentLoaded", function () {
     function openOverlay(index) {
         overlayImage.src = images[index].src;
         overlay.classList.add("active");
+		
+
         setTimeout(() => {
+			overlay.classList.add("visible");
             overlayImage.classList.add("active");
         }, 1);
     }
 
     function closeOverlay() {
-        overlay.classList.remove("active");
+        overlay.classList.remove("visible");
         overlayImage.classList.remove("active");
+		setTimeout(() => {
+            overlay.classList.remove("active");
+        }, 200);
     }
 
     function showNextImage() {
