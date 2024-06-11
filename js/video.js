@@ -50,7 +50,7 @@ function updatePlaylist() {
     }
 }
 
-function insert_content() {
+function insert_content(autoplay) {
     const songtitle = document.getElementById("Songtitle");
     const iframe = document.getElementById("youtube-video");
     const subtitles = document.getElementById("subtitles");
@@ -60,10 +60,18 @@ function insert_content() {
     subtitles.innerHTML = videos[index].subtitle.replace(/\n/g, "<br>");
     updatePlaylist();
 
-	player.loadVideoById({
-		videoId: videos[index].id, 
-		startSeconds: videos[index].start
-	})
+
+	if (autoplay) {
+		player.loadVideoById({
+			videoId: videos[index].id, 
+			startSeconds: videos[index].start, 
+		});
+	} else {
+		player.cueVideoById({
+			videoId: videos[index].id, 
+			startSeconds: videos[index].start, 
+		});
+	}
 }
 
 
@@ -101,14 +109,17 @@ function onYouTubeIframeAPIReady() {
 		events: {
 			'onReady': onPlayerReady,
       		'onStateChange': onPlayerStateChange
-    	}
+    	}, 
+		playerVars: {
+			'autoplay': 1,
+			'controls': 0
+      	}
   	});
 }
 
 function onPlayerReady(event) {
 	createPlaylist();
-	insert_content();
-	event.target.playVideo();
+	insert_content(0);
 }
 
 
@@ -129,7 +140,7 @@ function onPlayerStateChange(event) {
 
 function jumpToVideo(i) {
     index = i;
-    insert_content();
+    insert_content(1);
 }
 
 function switchVideo(dir) {
@@ -142,7 +153,7 @@ function switchVideo(dir) {
         index = 0;
     }
 
-    insert_content();
+    insert_content(1);
 }
 
 function pausePlay() {
